@@ -1,0 +1,12 @@
+@import "../styles/variables";
+@import "../styles/mixins";
+
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 45px;
+  gap: 50px;
+  font-family: $fontFamily;
+  @include vertical-list;
+}
