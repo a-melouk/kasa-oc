@@ -1,0 +1,21 @@
+@import "../styles/variables";
+@import "../styles/mixins";
+
+$size: 340px;
+
+.thumb {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: $size;
+  height: $size;
+  border-radius: 10px;
+  background-color: $backgroundColor;
+
+  &__title {
+    @include title;
+    margin: 0;
+    padding-inline: 20px;
+    padding-bottom: 20px;
+  }
+}

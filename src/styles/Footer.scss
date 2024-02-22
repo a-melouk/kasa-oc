@@ -1,0 +1,29 @@
+@import "../styles/variables";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 66px;
+  padding-bottom: 29px;
+  gap: 29px;
+  height: 209px;
+  background-color: #000;
+  box-sizing: border-box;
+
+  img {
+    width: 122px;
+    height: 40px;
+  }
+
+  span {
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    font-family: $fontFamily;
+    font-size: 24px;
+    height: 46px;
+    line-height: 34.224px;
+    text-align: center;
+  }
+}

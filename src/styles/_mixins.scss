@@ -1,5 +1,15 @@
+@import "../styles/variables";
+
 @mixin vertical-list {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+@mixin title {
+  color: $textColor;
+  font-family: $fontFamily;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25.7px;
 }

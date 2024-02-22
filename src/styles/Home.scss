@@ -1,0 +1,55 @@
+@import "../styles/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 43px;
+  margin-inline: 100px;
+  width: 1240px;
+
+  .hero {
+    background: #000;
+    border-radius: 25px;
+    mix-blend-mode: darken;
+    // opacity: 0.6;
+    position: relative;
+    height: 223px;
+    img {
+      background: #000;
+      height: 223px;
+      border-radius: 25px;
+      object-fit: cover;
+      width: 100%;
+      filter: brightness(0.4);
+    }
+    h1 {
+      -webkit-text-stroke-color: #000;
+      -webkit-text-stroke-width: 1;
+      color: #fff;
+      font-family: $fontFamily;
+      font-size: 48px;
+      font-weight: 700;
+      left: 273px;
+      line-height: 68.448px;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      top: 78px;
+    }
+  }
+
+  .gallery {
+    // width: 1240px;
+    background-color: #f6f6f6;
+    border-radius: 25px;
+    column-gap: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
+    padding-bottom: 43px;
+    padding-top: 56px;
+    row-gap: 50px;
+    padding-inline: 50px;
+    box-sizing: border-box;
+  }
+}
