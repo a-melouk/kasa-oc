@@ -7,8 +7,8 @@ $size: 340px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: $size;
-  height: $size;
+  width: 100%;
+  aspect-ratio: 1/1;
   border-radius: 10px;
   background-color: $backgroundColor;
 
@@ -17,5 +17,19 @@ $size: 340px;
     margin: 0;
     padding-inline: 20px;
     padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .thumb {
+    width: 100%;
+    aspect-ratio: 1/0.75;
+    // height: 255px;
+
+    &__title {
+      @include title;
+      padding-inline: 19.71px;
+      padding-bottom: 15px;
+    }
   }
 }

@@ -2,16 +2,23 @@
 
 .header {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-inline: 100px;
-  width: 1240px;
   height: 68px;
+  justify-content: space-between;
+  padding-inline: 100px;
+  width: 100%;
+  box-sizing: border-box;
+
+  img {
+    width: 210.322px;
+    height: 68px;
+  }
 
   nav {
+    align-items: center;
     display: flex;
     gap: 57px;
-    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
 
     a {
       text-decoration: none;
@@ -24,6 +31,26 @@
 
     a.active {
       text-decoration-line: underline;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    padding-inline: 20px;
+
+    img {
+      width: 145px;
+      height: 46.881px;
+    }
+
+    nav {
+      gap: 26px;
+
+      a {
+        line-height: 17.112px;
+        font-size: 12px;
+      }
     }
   }
 }

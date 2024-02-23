@@ -9,9 +9,17 @@
   height: 100vh;
   justify-content: space-between;
   padding-top: 45px;
+  width: 100vw;
 }
 
 body {
   margin: 0;
   padding: 0;
+}
+
+@media screen and (max-width: 576px) {
+  #root {
+    gap: 27px;
+    padding-top: 20px;
+  }
 }
