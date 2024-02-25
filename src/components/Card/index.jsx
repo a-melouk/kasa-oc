@@ -3,11 +3,11 @@ import "../../styles/Card.scss";
 
 function Card({ logement }) {
   return (
-    <div className="thumb">
-      <Link to={`/logement/${logement.id}`}>
+    <Link to={`/logement/${logement.id}`}>
+      <div className="thumb">
         <h2 className="thumb__title">{logement.title}</h2>
-      </Link>
-    </div>
+      </div>
+    </Link>
   );
 }
 
