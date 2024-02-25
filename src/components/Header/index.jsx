@@ -10,7 +10,7 @@ function Header() {
   }
 
   return (
-    <div className="header">
+    <header className="header">
       <img src={logo} alt="Logo de Kasa" />
       <nav>
         <Link to="/" className="active" onClick={activateLink}>
@@ -20,7 +20,7 @@ function Header() {
           A propos
         </Link>
       </nav>
-    </div>
+    </header>
   );
 }
 
