@@ -9,7 +9,6 @@
   justify-content: space-between;
   padding-top: 45px;
   width: 100%;
-  // max-width: 1440px;
   height: 100vh;
 }
 
@@ -42,4 +41,19 @@ body {
     gap: 27px;
     padding-top: 20px;
   }
+}
+
+button {
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: inherit;
+  background: transparent;
+  border: none;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  margin: 0;
+  overflow: visible;
+  padding: 0;
+  width: auto;
 }

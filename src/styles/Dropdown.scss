@@ -1,0 +1,86 @@
+@import "../styles/variables";
+
+.dropdown {
+  display: inline-flex;
+  flex-direction: column;
+  border-radius: 5px;
+  margin: 20px;
+  box-sizing: border-box;
+  width: 50%;
+
+  &__heading {
+    display: flex;
+    padding: 10px 15px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    background: $backgroundColor;
+    cursor: pointer;
+
+    &__title {
+      color: #fff;
+      font-family: $fontFamily;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 34.224px;
+      cursor: pointer;
+    }
+
+    &__icon {
+      width: 32px;
+      height: 32px;
+
+      img.opened {
+        transition: transform 0.3s ease-out;
+        transform: rotate(0deg);
+      }
+
+      img.closed {
+        transition: transform 0.3s ease-out;
+        transform: rotate(180deg);
+      }
+    }
+
+    &__icon:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #f6f6f673;
+    border-radius: 10px 10px 5px 5px;
+    padding: 25px 20px 20px 20px;
+
+    span {
+      font-family: $fontFamily;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 25.668px;
+    }
+  }
+}
+
+.dropdown.opened,
+.dropdown__content {
+  height: fit-content;
+  transition: max-height 0.3s ease-out;
+}
+
+.dropdown.closed,
+.dropdown.opened,
+.dropdown__content,
+.dropdown__items {
+  transition: max-height 0.3s ease-out;
+}
+
+.dropdown.opened {
+  max-height: 272px;
+}
+
+.dropdown.closed {
+  max-height: 54px;
+  overflow: hidden;
+}

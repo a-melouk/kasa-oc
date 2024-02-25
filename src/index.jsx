@@ -13,7 +13,8 @@ function App() {
   const [logements, setLogements] = useState([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5500/src/data/logements.json")
+    fetch("./data/logements.json")
+      // fetch("http://127.0.0.1:5500/src/data/logements.json")
       .then((response) => response.json())
       .then((data) => {
         setLogements(data);
