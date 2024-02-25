@@ -1,24 +1,39 @@
-import { Link } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import logo from "../../assets/logo.svg";
 import "../../styles/Header.scss";
+import { useEffect, useState } from "react";
 
 function Header() {
-  function activateLink(e) {
-    const links = document.querySelectorAll("nav a");
-    links.forEach((link) => link.classList.remove("active"));
-    e.target.classList.add("active");
-  }
+  const location = useLocation();
+  const [activeLink, setActiveLink] = useState("");
+
+  useEffect(() => {
+    setActiveLink(location.pathname);
+  }, [location]);
 
   return (
     <header className="header">
       <img src={logo} alt="Logo de Kasa" />
       <nav>
-        <Link to="/" className="active" onClick={activateLink}>
-          Accueil
-        </Link>
-        <Link to="/about" onClick={activateLink}>
-          A propos
-        </Link>
+        <ul>
+          <li>
+            <NavLink
+              to="/"
+              className={activeLink === "/" ? "active" : ""}
+              exact
+            >
+              Accueil
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/about"
+              className={activeLink === "/about" ? "active" : ""}
+            >
+              A propos
+            </NavLink>
+          </li>
+        </ul>
       </nav>
     </header>
   );
