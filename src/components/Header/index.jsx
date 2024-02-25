@@ -17,11 +17,7 @@ function Header() {
       <nav>
         <ul>
           <li>
-            <NavLink
-              to="/"
-              className={activeLink === "/" ? "active" : ""}
-              exact
-            >
+            <NavLink to="/" className={activeLink === "/" ? "active" : ""}>
               Accueil
             </NavLink>
           </li>

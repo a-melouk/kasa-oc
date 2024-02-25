@@ -62,15 +62,22 @@
   }
 }
 
-.dropdown.closed,
 .dropdown.opened {
   // transition: max-height 0.3s ease-out;
-  transition: max-height 300ms ease-in-out 0ms;
+  transition: max-height 200ms ease-out 100ms;
 }
 
-.dropdown__content.opened,
-.dropdown__content.closed {
+.dropdown.closed {
+  // transition: max-height 0.3s ease-out;
+  transition: max-height 500ms ease-out 0ms;
+}
+
+.dropdown__content.opened {
   transition: transform 500ms ease-out 0ms;
+}
+
+.dropdown__content.closed {
+  transition: transform 200ms ease-out 100ms;
 }
 
 .dropdown.opened {
@@ -108,7 +115,7 @@
 
   .dropdown__heading {
     padding: 10px 0px 10px 10px;
-    height: 10px;
+    height: 30px;
 
     &__title {
       font-size: 13px;
