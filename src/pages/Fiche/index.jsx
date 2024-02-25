@@ -1,20 +1,14 @@
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 function Fiche() {
-  let { numeroLogement } = useParams();
+  let { idLogement } = useParams();
+  const logements = JSON.parse(localStorage.getItem("logements"));
+  const logement = logements.find((logement) => logement.id === idLogement);
 
   return (
     <div>
       <h1>Logements</h1>
-      <h2>Logement {numeroLogement}</h2>
-
-      {parseInt(numeroLogement) === 1 ? (
-        <Link to={`/logement/1`}>Précédent</Link>
-      ) : (
-        <Link to={`/logement/${parseInt(numeroLogement) - 1}`}>Précédent</Link>
-      )}
-
-      <Link to={`/logement/${parseInt(numeroLogement) + 1}`}>Suivant</Link>
+      <h2>Logement {logement.title}</h2>
     </div>
   );
 }

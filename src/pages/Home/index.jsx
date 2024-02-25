@@ -2,7 +2,7 @@ import Card from "../../components/Card";
 import "../../styles/Home.scss";
 import slogan from "../../assets/slogan.png";
 
-function Home() {
+function Home({ logements }) {
   return (
     <div className="container">
       <div className="hero">
@@ -10,12 +10,9 @@ function Home() {
         <h1>Chez vous, partout et ailleurs</h1>
       </div>
       <div className="gallery">
-        <Card title="Magnifique appartement proche Canal Saint Martin" />
-        <Card title="Magnifique appartement proche Canal Saint Martin" />
-        <Card title="Magnifique appartement proche Canal Saint Martin" />
-        <Card title="Magnifique appartement proche Canal Saint Martin" />
-        <Card title="Magnifique appartement proche Canal Saint Martin" />
-        <Card title="Magnifique appartement proche Canal Saint Martin" />
+        {logements.map((logement) => (
+          <Card key={logement.id} logement={logement} />
+        ))}
       </div>
     </div>
   );
