@@ -1,0 +1,58 @@
+.container {
+  gap: 38px;
+
+  .hero img {
+    filter: brightness(0.6);
+  }
+
+  .valeurs {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-inline: 208.5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    gap: 30px;
+
+    .valeurs {
+      gap: 25px;
+      padding-inline: 150px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    gap: 25px;
+
+    .valeurs {
+      padding-inline: 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    gap: 20px;
+
+    .valeurs {
+      padding-inline: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    gap: 19px;
+
+    .valeurs {
+      gap: 20px;
+      padding-inline: 19px;
+    }
+  }
+}

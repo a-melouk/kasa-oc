@@ -21,7 +21,7 @@ function Collapse({ title, children }) {
           />
         </button>
       </div>
-      <div className="dropdown__content">
+      <div className={`dropdown__content ${isOpen ? "opened" : "closed"}`}>
         {children.map((child, index) => (
           <span key={index}>{child}</span>
         ))}

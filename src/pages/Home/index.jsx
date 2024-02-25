@@ -4,21 +4,8 @@ import slogan from "../../assets/slogan.png";
 import Collapse from "../../components/Collapse";
 
 function Home({ logements }) {
-  const equipments = [
-    "Wifi",
-    "Cuisine",
-    "Chauffage",
-    "Fer à repasser",
-    "Sèche-cheveux",
-    "Espace de travail pour ordinateur portable",
-    "Télévision",
-    "Lave-linge",
-    "Climatisation",
-    "Sèche-linge",
-  ];
   return (
     <div>
-      <Collapse title="Equipements" children={equipments} isOpen="false" />
       <div className="container">
         <div className="hero">
           <img src={slogan} alt="Chez vous, partout et ailleurs" />

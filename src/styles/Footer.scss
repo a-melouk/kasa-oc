@@ -11,6 +11,8 @@
   background-color: #000;
   box-sizing: border-box;
   width: 100%;
+  flex-shrink: 0;
+  z-index: 999;
 
   img {
     width: 122px;
