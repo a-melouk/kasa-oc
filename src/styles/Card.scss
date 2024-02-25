@@ -23,8 +23,7 @@ $size: 340px;
 @media screen and (max-width: 480px) {
   .thumb {
     width: 100%;
-    aspect-ratio: 1/0.75;
-    // height: 255px;
+    aspect-ratio: 1/0.761;
 
     &__title {
       @include title;

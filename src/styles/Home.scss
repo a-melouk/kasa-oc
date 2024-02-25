@@ -22,6 +22,7 @@
       height: 100%;
       object-fit: cover;
       width: 100%;
+      position: relative;
     }
 
     h1 {
@@ -39,8 +40,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 733px;
-      display: none !important;
+      width: max-content;
     }
   }
 
@@ -70,9 +70,6 @@
       h1 {
         font-size: 36px;
         line-height: 51.168px;
-        top: 50%;
-        left: 50%;
-        width: 550px;
       }
     }
 
@@ -97,9 +94,6 @@
       h1 {
         font-size: 30px;
         line-height: 42.336px;
-        top: 50%;
-        left: 50%;
-        width: 366px;
       }
     }
 
@@ -125,9 +119,6 @@
       h1 {
         font-size: 24px;
         line-height: 33.504px;
-        top: 50%;
-        left: 50%;
-        width: 275px;
       }
     }
 
@@ -159,9 +150,9 @@
       h1 {
         font-size: 24px;
         line-height: 24px;
-        top: 31px;
-        left: 16px;
-        width: 225px;
+        top: 50%;
+        left: 40%;
+        width: 68%;
       }
     }
 
