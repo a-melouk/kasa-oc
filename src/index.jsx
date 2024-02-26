@@ -10,11 +10,12 @@ import Home from "./pages/Home";
 import React, { useState, useEffect } from "react";
 
 function App() {
+  document.title = "Kasa";
   const [logements, setLogements] = useState([]);
 
   useEffect(() => {
-    fetch("./src/data/logements.json")
-      // fetch("http://127.0.0.1:5500/src/data/logements.json")
+    // fetch("./src/data/logements.json")
+    fetch("http://127.0.0.1:5500/src/data/logements.json")
       .then((response) => response.json())
       .then((data) => {
         setLogements(data);

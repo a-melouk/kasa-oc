@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom";
 
 function Error() {
+  const root = document.getElementById("root");
+  root.classList.add("no-gap");
   return (
     <div className="error">
       <h1 className="error__heading">404</h1>

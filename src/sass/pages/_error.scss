@@ -34,3 +34,25 @@
     font-weight: 500;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .error {
+    padding-block: 113px;
+    gap: 113px;
+
+    &__heading {
+      font-size: 96px;
+      height: 99px;
+    }
+
+    &__text {
+      font-size: 18px;
+      text-align: center;
+      max-width: 260px;
+    }
+
+    a {
+      font-size: 14px;
+    }
+  }
+}

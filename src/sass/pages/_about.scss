@@ -1,7 +1,10 @@
 @import "../utils/mixins";
 
 .about__container {
-  gap: 38px;
+  @include flex-column(38px);
+  flex: 1;
+  padding-inline: 100px;
+  width: 100%;
 
   .hero img {
     filter: brightness(0.6);
@@ -9,7 +12,7 @@
 
   .valeurs {
     @include flex-column(30px);
-    padding-inline: 208.5px;
+    padding-inline: 108.5px;
     width: 100%;
   }
 }
@@ -17,10 +20,11 @@
 @media screen and (max-width: 1200px) {
   .about__container {
     gap: 30px;
+    padding-inline: 75px;
 
     .valeurs {
       gap: 25px;
-      padding-inline: 150px;
+      padding-inline: 100px;
     }
   }
 }
@@ -28,9 +32,10 @@
 @media screen and (max-width: 1024px) {
   .about__container {
     gap: 25px;
+    padding-inline: 50px;
 
     .valeurs {
-      padding-inline: 100px;
+      padding-inline: 75px;
     }
   }
 }
@@ -38,6 +43,7 @@
 @media screen and (max-width: 768px) {
   .about__container {
     gap: 20px;
+    padding-inline: 40px;
 
     .valeurs {
       padding-inline: 50px;
@@ -47,7 +53,8 @@
 
 @media screen and (max-width: 480px) {
   .about__container {
-    gap: 19px;
+    gap: 20px;
+    padding-inline: 20px;
 
     .valeurs {
       gap: 20px;

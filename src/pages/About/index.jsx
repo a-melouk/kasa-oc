@@ -1,12 +1,11 @@
 import about from "../../assets/about.jpg";
+import Banner from "../../components/Banner";
 import Collapse from "../../components/Collapse";
 
 function About() {
   return (
     <div className="about__container">
-      <div className="hero">
-        <img src={about} alt="" />
-      </div>
+      <Banner image={about} alt="" />
       <div className="valeurs">
         <Collapse
           title="Fiabilité"

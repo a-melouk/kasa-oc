@@ -27,16 +27,6 @@
     &__icon {
       width: 32px;
       height: 32px;
-
-      img.opened {
-        transition: transform 0.3s ease-out;
-        transform: rotate(0deg);
-      }
-
-      img.closed {
-        transition: transform 0.3s ease-out;
-        transform: rotate(180deg);
-      }
     }
 
     &__icon:hover {
@@ -56,39 +46,6 @@
       line-height: 25.668px;
     }
   }
-}
-
-.dropdown.opened {
-  transition: max-height 200ms ease-out 100ms;
-}
-
-.dropdown.closed {
-  transition: max-height 500ms ease-out 0ms;
-}
-
-.dropdown__content.opened {
-  transition: transform 500ms ease-out 0ms;
-}
-
-.dropdown__content.closed {
-  transition: transform 200ms ease-out 100ms;
-}
-
-.dropdown.opened {
-  max-height: 272px;
-}
-
-.dropdown.closed {
-  max-height: 54px;
-  overflow: hidden;
-}
-
-.dropdown__content.opened {
-  transform: translateY(0%);
-}
-
-.dropdown__content.closed {
-  transform: translateY(-32%);
 }
 
 @media screen and (max-width: 768px) {

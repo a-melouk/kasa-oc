@@ -2,6 +2,7 @@
 @import "../sass/utils/mixins";
 
 @import "../sass/base/reset";
+@import "../sass/base/animations";
 
 @import "../sass/layout/app";
 @import "../sass/layout/header";
@@ -9,6 +10,7 @@
 
 @import "../sass/components/card";
 @import "../sass/components/dropdown";
+@import "../sass/components/banner";
 
 @import "../sass/pages/home";
 @import "../sass/pages/about";
