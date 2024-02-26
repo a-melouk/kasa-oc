@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import React, { useState, useEffect, StrictMode } from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 
 function App() {
   const [logements, setLogements] = useState([]);
@@ -39,9 +39,5 @@ function App() {
   );
 }
 
-ReactDOM.render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-  document.getElementById("root")
-);
+const root = createRoot(document.getElementById("root"));
+root.render(<App />);
