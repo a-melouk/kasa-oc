@@ -6,7 +6,6 @@
   gap: 43px;
   padding-inline: 100px;
   width: 100%;
-  box-sizing: border-box;
   flex: 1;
 
   .hero {
@@ -48,7 +47,6 @@
   .gallery {
     background-color: #f6f6f6;
     border-radius: 25px;
-    box-sizing: border-box;
     column-gap: 60px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -139,7 +137,6 @@
     padding-inline: 20px;
 
     .hero {
-      box-sizing: border-box;
       height: 111px;
       border-radius: 10px;
       border: 1px solid #000;

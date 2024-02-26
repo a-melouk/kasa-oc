@@ -6,7 +6,7 @@ import Fiche from "./pages/Fiche";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Home from "./pages/Home";
-import React, { useState, useEffect, StrictMode } from "react";
+import React, { useState, useEffect } from "react";
 import { createRoot } from "react-dom/client";
 
 function App() {

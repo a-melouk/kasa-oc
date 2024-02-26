@@ -1,0 +1,43 @@
+@import "../styles/variables";
+#root {
+  gap: 0px;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 139px;
+  padding-block: 139px;
+
+  &__heading {
+    color: $backgroundColor;
+    font-family: $fontFamily;
+    font-size: 288px;
+    font-weight: 700;
+    height: 263px;
+    line-height: 142.6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__text {
+    color: $backgroundColor;
+    font-family: $fontFamily;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 142.6%; /* 51.336px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  a {
+    font-family: $fontFamily;
+    font-size: 18px;
+    line-height: 142.6%; /* 25.668px */
+    text-decoration-line: underline;
+    font-weight: 500;
+  }
+}
