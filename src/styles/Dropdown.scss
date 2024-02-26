@@ -62,12 +62,10 @@
 }
 
 .dropdown.opened {
-  // transition: max-height 0.3s ease-out;
   transition: max-height 200ms ease-out 100ms;
 }
 
 .dropdown.closed {
-  // transition: max-height 0.3s ease-out;
   transition: max-height 500ms ease-out 0ms;
 }
 
