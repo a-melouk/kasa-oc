@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/a-melouk/kasa-oc/static/css/main.0296e670.css",
+    "main.js": "/a-melouk/kasa-oc/static/js/main.7889609d.js",
+    "static/media/about.jpg": "/a-melouk/kasa-oc/static/media/about.796d007cebdd47cc489b.jpg",
+    "static/media/slogan.png": "/a-melouk/kasa-oc/static/media/slogan.d00ae7dd3ef927bb988d.png",
+    "static/media/logo.svg": "/a-melouk/kasa-oc/static/media/logo.834bc052d72967b51536eb86c2a6c4b8.svg",
+    "static/media/logo-white.svg": "/a-melouk/kasa-oc/static/media/logo-white.5918a4b1dd72323171d5cb170f708f9c.svg",
+    "index.html": "/a-melouk/kasa-oc/index.html",
+    "static/media/arrow_down.svg": "/a-melouk/kasa-oc/static/media/arrow_down.1b57d3bb5cb88867f3b84d45d5b98c97.svg",
+    "main.0296e670.css.map": "/a-melouk/kasa-oc/static/css/main.0296e670.css.map",
+    "main.7889609d.js.map": "/a-melouk/kasa-oc/static/js/main.7889609d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0296e670.css",
+    "static/js/main.7889609d.js"
+  ]
+}
