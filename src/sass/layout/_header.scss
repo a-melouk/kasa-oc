@@ -2,10 +2,7 @@
 
 .header {
   display: flex;
-  height: 68px;
-  justify-content: space-between;
   padding-inline: 100px;
-  width: 100%;
 
   img {
     width: 210.322px;
@@ -15,8 +12,6 @@
   nav {
     align-items: center;
     display: flex;
-    gap: 57px;
-    justify-content: flex-end;
     width: 100%;
 
     ul {
@@ -27,9 +22,6 @@
 
       a {
         text-decoration: none;
-        color: #000;
-        text-align: right;
-        font-family: $fontFamily;
         font-size: 24px;
         line-height: 34px;
       }

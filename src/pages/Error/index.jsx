@@ -1,4 +1,3 @@
-import "../../sass/pages/_error.scss";
 import { NavLink } from "react-router-dom";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";

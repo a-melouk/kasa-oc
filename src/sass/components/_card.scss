@@ -1,16 +1,13 @@
 @import "../utils/variables";
 @import "../utils/mixins";
 
-$size: 340px;
-
 .thumb {
-  display: flex;
-  flex-direction: column;
+  aspect-ratio: 1/1;
+  background-color: $orange;
+  border-radius: 10px;
+  @include flex-column();
   justify-content: flex-end;
   width: 100%;
-  aspect-ratio: 1/1;
-  border-radius: 10px;
-  background-color: $backgroundColor;
 
   &__title {
     @include title;
@@ -26,7 +23,6 @@ $size: 340px;
     aspect-ratio: 1/0.761;
 
     &__title {
-      @include title;
       padding-inline: 19.71px;
       padding-bottom: 15px;
     }

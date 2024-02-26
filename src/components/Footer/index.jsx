@@ -1,4 +1,3 @@
-import "../../sass/layout/_footer.scss";
 import logo from "../../assets/logo-white.svg";
 
 function Footer() {

@@ -1,4 +1,3 @@
-import "../../sass/components/_card.scss";
 import { Link } from "react-router-dom";
 
 function Card({ logement }) {

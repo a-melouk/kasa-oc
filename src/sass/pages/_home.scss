@@ -1,12 +1,11 @@
 @import "../utils/variables";
+@import "../utils/mixins";
 
-.container {
-  display: flex;
-  flex-direction: column;
-  gap: 43px;
+.home__container {
+  @include flex-column(43px);
+  flex: 1;
   padding-inline: 100px;
   width: 100%;
-  flex: 1;
 
   .hero {
     background-color: #000;
@@ -29,7 +28,6 @@
       -webkit-text-stroke-color: #000;
       -webkit-text-stroke-width: 1;
       color: #fff;
-      font-family: $fontFamily;
       font-size: 48px;
       font-weight: 700;
       line-height: 68.448px;
@@ -59,7 +57,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .container {
+  .home__container {
     gap: 30px;
     padding-inline: 75px;
 
@@ -83,7 +81,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .container {
+  .home__container {
     gap: 30px;
     padding-inline: 50px;
 
@@ -108,7 +106,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .container {
+  .home__container {
     gap: 25px;
     padding-inline: 40px;
 
@@ -132,7 +130,7 @@
 }
 
 @media screen and (max-width: 480px) {
-  .container {
+  .home__container {
     gap: 22px;
     padding-inline: 20px;
 
@@ -155,10 +153,8 @@
     }
 
     .gallery {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
       background-color: #fff;
+      @include flex-column(20px);
       padding: 0;
     }
   }

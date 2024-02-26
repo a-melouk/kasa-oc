@@ -1,10 +1,9 @@
-import "../../sass/pages/_home.scss";
 import Card from "../../components/Card";
 import slogan from "../../assets/slogan.png";
 
 function Home({ logements }) {
   return (
-    <div className="container">
+    <div className="home__container">
       <div className="hero">
         <img src={slogan} alt="Chez vous, partout et ailleurs" />
         <h1>Chez vous, partout et ailleurs</h1>

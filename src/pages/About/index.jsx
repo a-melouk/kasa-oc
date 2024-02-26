@@ -1,10 +1,9 @@
-import "../../sass/pages/_about.scss";
 import about from "../../assets/about.jpg";
 import Collapse from "../../components/Collapse";
 
 function About() {
   return (
-    <div className="container">
+    <div className="about__container">
       <div className="hero">
         <img src={about} alt="" />
       </div>

@@ -2,9 +2,7 @@
 @import "../utils/mixins";
 
 #root {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
+  @include flex-column(50px);
   justify-content: space-between;
   padding-top: 45px;
   width: 100%;

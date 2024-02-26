@@ -1,4 +1,3 @@
-import "../../sass/components/_dropdown.scss";
 import { useState } from "react";
 import arrow from "../../assets/arrow_down.svg";
 

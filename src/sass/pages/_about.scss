@@ -1,4 +1,6 @@
-.container {
+@import "../utils/mixins";
+
+.about__container {
   gap: 38px;
 
   .hero img {
@@ -6,16 +8,14 @@
   }
 
   .valeurs {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+    @include flex-column(30px);
     padding-inline: 208.5px;
     width: 100%;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .container {
+  .about__container {
     gap: 30px;
 
     .valeurs {
@@ -26,7 +26,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .container {
+  .about__container {
     gap: 25px;
 
     .valeurs {
@@ -36,7 +36,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .container {
+  .about__container {
     gap: 20px;
 
     .valeurs {
@@ -46,7 +46,7 @@
 }
 
 @media screen and (max-width: 480px) {
-  .container {
+  .about__container {
     gap: 19px;
 
     .valeurs {

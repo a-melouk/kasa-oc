@@ -1,4 +1,3 @@
-import "../../sass/layout/_header.scss";
 import { NavLink, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import logo from "../../assets/logo.svg";

@@ -1,14 +1,13 @@
 @import "../utils/variables";
 
-@mixin vertical-list {
+@mixin flex-column($gap: 0) {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  gap: $gap;
 }
 
 @mixin title {
-  color: $textColor;
-  font-family: $fontFamily;
+  color: #fff;
   font-size: 18px;
   font-weight: 700;
   line-height: 25.7px;
