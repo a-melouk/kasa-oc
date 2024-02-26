@@ -25,6 +25,7 @@
     font-weight: 500;
     justify-content: center;
     line-height: 142.6%; /* 51.336px */
+    text-align: center;
   }
 
   a {
@@ -32,6 +33,36 @@
     line-height: 142.6%; /* 25.668px */
     text-decoration-line: underline;
     font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .error {
+    padding-block: 113px;
+    gap: 113px;
+
+    &__heading {
+      font-size: 192px;
+      height: 199px;
+    }
+
+    &__text {
+      font-size: 24px;
+      max-width: 600px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .error {
+    &__heading {
+      font-size: 144px;
+      height: 149px;
+    }
+
+    &__text {
+      max-width: 400px;
+    }
   }
 }
 
