@@ -1,6 +1,6 @@
-import "../../styles/Dropdown.scss";
-import arrow from "../../assets/arrow_down.svg";
+import "../../sass/components/_dropdown.scss";
 import { useState } from "react";
+import arrow from "../../assets/arrow_down.svg";
 
 function Collapse({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);

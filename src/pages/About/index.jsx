@@ -1,6 +1,6 @@
-import Collapse from "../../components/Collapse";
+import "../../sass/pages/_about.scss";
 import about from "../../assets/about.jpg";
-import "../../styles/About.scss";
+import Collapse from "../../components/Collapse";
 
 function About() {
   return (

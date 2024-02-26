@@ -1,5 +1,5 @@
+import "../../sass/pages/_home.scss";
 import Card from "../../components/Card";
-import "../../styles/Home.scss";
 import slogan from "../../assets/slogan.png";
 
 function Home({ logements }) {

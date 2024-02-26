@@ -1,7 +1,7 @@
-import "../src/styles/App.scss";
+import "./sass/_main.scss";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./pages/About";
-import Error from "./components/Error";
+import Error from "./pages/Error";
 import Fiche from "./pages/Fiche";
 import Footer from "./components/Footer";
 import Header from "./components/Header";

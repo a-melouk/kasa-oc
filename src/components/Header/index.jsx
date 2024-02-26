@@ -1,7 +1,7 @@
+import "../../sass/layout/_header.scss";
 import { NavLink, useLocation } from "react-router-dom";
-import logo from "../../assets/logo.svg";
-import "../../styles/Header.scss";
 import { useEffect, useState } from "react";
+import logo from "../../assets/logo.svg";
 
 function Header() {
   const location = useLocation();
