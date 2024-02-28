@@ -13,7 +13,6 @@
     "sass": "^1.71.1",
     "web-vitals": "^2.1.0"
   },
-  "homepage": "http://a-melouk.github.io/kasa-oc",
   "scripts": {
     "start": "set PORT=3006 && react-scripts start",
     "build": "react-scripts build",
