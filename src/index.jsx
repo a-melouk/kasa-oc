@@ -1,5 +1,10 @@
 import "./sass/_main.scss";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import { createRoot } from "react-dom/client";
 import About from "./pages/About";
 import Error from "./pages/Error";
@@ -26,10 +31,11 @@ function App() {
 
   return (
     <React.StrictMode>
-      <Router>
+      <Router basename="/">
         <Header />
         <Routes>
           <Route path="/" element={<Home logements={logements} />} />
+          <Route path="/kasa-oc" element={<Navigate to="/" replace />} />
           <Route path="/about" element={<About />} />
           <Route path="/logement/:idLogement" element={<Fiche />} />
           <Route path="*" element={<Error />} />
