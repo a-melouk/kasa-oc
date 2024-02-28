@@ -16,10 +16,7 @@ function Header() {
       <nav>
         <ul>
           <li>
-            <NavLink
-              to="/home"
-              className={activeLink === "/home" ? "active" : ""}
-            >
+            <NavLink to="/" className={activeLink === "/" ? "active" : ""}>
               Accueil
             </NavLink>
           </li>
