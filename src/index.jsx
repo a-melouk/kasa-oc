@@ -19,7 +19,7 @@ function App() {
   const [logements, setLogements] = useState([]);
 
   useEffect(() => {
-    fetch("/src/data/logements.json")
+    fetch("/logements.json")
       // fetch("http://127.0.0.1:5500/src/data/logements.json")
       .then((response) => response.json())
       .then((data) => {
@@ -28,7 +28,6 @@ function App() {
       })
       .catch((error) => console.error(error));
   }, []);
-
   return (
     <React.StrictMode>
       <Router basename="/">
