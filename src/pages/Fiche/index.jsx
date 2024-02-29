@@ -35,17 +35,25 @@ function Fiche() {
         </div>
         <StarRating rating={logement.rating} />
       </section>
+
       <section className="logement__details">
         <Collapse
           className="logement__details__description"
           title="Description"
-          children={[logement.description]}
-        />
+        >
+          <p>{logement.description}</p>
+        </Collapse>
+
         <Collapse
           className="logement__details__equipements"
           title="Équipements"
-          children={logement.equipments}
-        />
+        >
+          {logement.equipments.map((equipment) => (
+            <span key={equipment} className="logement__details__equipement">
+              {equipment}
+            </span>
+          ))}
+        </Collapse>
       </section>
     </div>
   ) : (
