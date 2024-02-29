@@ -1,14 +1,8 @@
 import { NavLink, useLocation } from "react-router-dom";
-import { useEffect, useState } from "react";
 import logo from "../../assets/logo.svg";
 
 function Header() {
   const location = useLocation();
-  const [activeLink, setActiveLink] = useState("");
-
-  useEffect(() => {
-    setActiveLink(location.pathname);
-  }, [location]);
 
   return (
     <header className="header">
@@ -16,14 +10,17 @@ function Header() {
       <nav>
         <ul>
           <li>
-            <NavLink to="/" className={activeLink === "/" ? "active" : ""}>
+            <NavLink
+              to="/"
+              className={location.pathname === "/" ? "active" : ""}
+            >
               Accueil
             </NavLink>
           </li>
           <li>
             <NavLink
               to="/about"
-              className={activeLink === "/about" ? "active" : ""}
+              className={location.pathname === "/about" ? "active" : ""}
             >
               A propos
             </NavLink>
