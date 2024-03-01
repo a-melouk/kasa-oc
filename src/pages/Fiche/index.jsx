@@ -1,6 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import Collapse from "../../components/Collapse";
 import StarRating from "../../components/StarRating";
+import Carrousel from "../../components/Carrousel";
 
 function Fiche() {
   let { idLogement } = useParams();
@@ -10,9 +11,10 @@ function Fiche() {
 
   return logement ? (
     <div className="logement">
-      <div className="logement__carrousel">
+      {/* <div className="logement__carrousel">
         <img src={logement.pictures[0]} alt={logement.title} />
-      </div>
+      </div> */}
+      <Carrousel pictures={logement.pictures} />
       <section className="logement__presentation">
         <div className="logement__title__location">
           <h1 className="logement__title">{logement.title}</h1>
