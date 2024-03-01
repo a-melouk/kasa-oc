@@ -12,7 +12,7 @@ import Fiche from "./pages/Fiche";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Home from "./pages/Home";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, StrictMode } from "react";
 
 function App() {
   document.title = "Kasa";
@@ -45,4 +45,8 @@ function App() {
 }
 
 const root = createRoot(document.getElementById("root"));
-root.render(<App />);
+root.render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+);

@@ -2,6 +2,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import Collapse from "../../components/Collapse";
 import StarRating from "../../components/StarRating";
 import Carrousel from "../../components/Carrousel";
+import { useEffect } from "react";
 
 function Fiche() {
   let { idLogement } = useParams();
@@ -9,11 +10,15 @@ function Fiche() {
   const logements = JSON.parse(localStorage.getItem("logements"));
   const logement = logements.find((logement) => logement.id === idLogement);
 
-  return logement ? (
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    if (!logement) return navigate("/error");
+  }, [logement, navigate]);
+
+  if (!logement) return null;
+
+  return (
     <div className="logement">
-      {/* <div className="logement__carrousel">
-        <img src={logement.pictures[0]} alt={logement.title} />
-      </div> */}
       <Carrousel pictures={logement.pictures} />
       <section className="logement__presentation">
         <div className="logement__title__location">
@@ -58,8 +63,6 @@ function Fiche() {
         </Collapse>
       </section>
     </div>
-  ) : (
-    navigate("/error")
   );
 }
 
