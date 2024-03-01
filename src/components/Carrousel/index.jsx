@@ -25,7 +25,7 @@ function Carrousel({ pictures }) {
   if (!hasMoreThanOnePicture)
     return (
       <div className="carrousel">
-        <img src={pictures[0]} alt="" />
+        <img className="carrousel__current__picture" src={pictures[0]} alt="" />
       </div>
     );
   else {
