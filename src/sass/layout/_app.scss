@@ -3,10 +3,9 @@
 
 #root {
   @include flex-column(50px);
-  // justify-content: space-between;
   padding-top: 45px;
   width: 100%;
-  // height: 100vh;
+  min-height: 100vh;
 }
 
 @media screen and (max-width: 1200px) {

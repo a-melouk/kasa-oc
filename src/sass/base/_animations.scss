@@ -13,7 +13,8 @@ $animation_duration: 0.3s;
 }
 
 .dropdown.opened {
-  max-height: 272px;
+  // max-height: 272px;
+  max-height: 305px;
   transition: max-height $animation_duration ease-out 0ms;
 }
 

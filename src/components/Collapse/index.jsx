@@ -12,7 +12,10 @@ function Collapse({ title, children }) {
     <div className={`dropdown ${isOpen ? "opened" : "closed"}`}>
       <div className="dropdown__heading" onClick={onClick}>
         <button className="dropdown__heading__title">{title}</button>
-        <button className="dropdown__heading__icon">
+        <button
+          className="dropdown__heading__icon"
+          aria-label={`${isOpen ? `Cacher ${title}` : `Montrer ${title}`}`}
+        >
           <img
             src={arrow}
             alt=""
@@ -28,5 +31,3 @@ function Collapse({ title, children }) {
 }
 
 export default Collapse;
-
-// <Collapse title="Equipements" children={equipments} isOpen="false" />

@@ -20,7 +20,7 @@ function Fiche() {
   return (
     <div className="logement">
       <Carrousel pictures={logement.pictures} />
-      <section className="logement__presentation">
+      <div className="logement__presentation">
         <div className="logement__title__location">
           <h1 className="logement__title">{logement.title}</h1>
           <h2 className="logement__location">{logement.location}</h2>
@@ -41,9 +41,9 @@ function Fiche() {
           ))}
         </div>
         <StarRating rating={logement.rating} />
-      </section>
+      </div>
 
-      <section className="logement__details">
+      <div className="logement__details">
         <Collapse
           className="logement__details__description"
           title="Description"
@@ -61,7 +61,7 @@ function Fiche() {
             </span>
           ))}
         </Collapse>
-      </section>
+      </div>
     </div>
   );
 }

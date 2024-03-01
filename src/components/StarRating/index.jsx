@@ -6,16 +6,23 @@ function StarRating({ rating }) {
   for (let i = 1; i <= 5; i++) {
     if (i <= rating) {
       stars.push(
-        <img className="star" key={i} src={starFull} alt="Star filled" />
+        <img className="star" key={i} src={starFull} alt="Etoile remplie" />
       );
     } else {
       stars.push(
-        <img className="star" key={i} src={starEmpty} alt="Star empty" />
+        <img className="star" key={i} src={starEmpty} alt="Etoile vide" />
       );
     }
   }
 
-  return <div className="logement__rating">{stars}</div>;
+  return (
+    <div
+      className="logement__rating"
+      aria-label={`A une note de ${rating} sur 5`}
+    >
+      {stars}
+    </div>
+  );
 }
 
 export default StarRating;

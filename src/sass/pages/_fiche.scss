@@ -3,6 +3,7 @@
 .logement {
   @include flex-column();
   padding-inline: 100px;
+  flex-grow: 1;
 
   &__presentation {
     padding-top: 30px;
@@ -13,7 +14,6 @@
 
     .logement__title__location {
       @include flex-column();
-      // padding-bottom: 20px;
       grid-area: 1 / 1 / 2 / 2;
 
       .logement__title {
@@ -58,8 +58,8 @@
   &__tags {
     display: flex;
     gap: 10px;
-    // padding-top: 20px;
-    height: 25px;
+    flex-wrap: wrap;
+    // height: 25px;
     grid-area: 2 / 1 / 3 / 2;
     align-items: flex-end;
 
@@ -84,6 +84,7 @@
     grid-area: 2 / 2 / 3 / 3;
     justify-self: flex-end;
     gap: 8px;
+    align-items: center;
   }
 
   &__details {
@@ -152,7 +153,6 @@
         padding-top: 0;
 
         .logement__tag {
-          // width: 84px;
           font-size: 10px;
           font-weight: 700;
           height: 18px;
