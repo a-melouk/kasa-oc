@@ -3,17 +3,24 @@
 
 .thumb {
   aspect-ratio: 1/1;
-  background-color: $orange;
   border-radius: 10px;
   @include flex-column();
   justify-content: flex-end;
   width: 100%;
+  position: relative;
+
+  &__img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
 
   &__title {
     @include title;
     margin: 0;
     padding-inline: 20px;
     padding-bottom: 20px;
+    position: absolute;
   }
 }
 
